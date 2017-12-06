@@ -6,7 +6,7 @@ Needs to insert the new item in AutoComplete suggestion items.
 
 We can insert the new item in AutoComplete suggestion items through filtering event of ej2-autocomplete with DataManager. Please refer the below code snippet.
 
-
+```
 public onFiltering: EmitType<FilteringArgs> = (e: FilteringArgs) => {
     e.preventDefaultAction = true;
     let query: Query = new Query();
@@ -21,8 +21,8 @@ public onFiltering: EmitType<FilteringArgs> = (e: FilteringArgs) => {
       e.updateData(suggestions);
     })
   }
-
-
+  
+```
 ## Installing and Running Application
 
 ### Installing
